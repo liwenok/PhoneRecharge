@@ -5,12 +5,14 @@ export default {
         if(self.utils.VerifyPhone(param.Phone)){
             self.$http.post(self.con.ApiUrl().PhoneRecharge,param).then(success => {
                 switch (0){
+                    // errorCode = 208517，账户余额不足
                     case self.con.GlobalPrompt().errorCode.NoMoney:
                         self.dialogText = self.utils.ErrorHelp(self.utils.SubstrOrderId(success.data.orderid),success.data.status.reason)
                         self.dialog = true
                         break
+                    // errorCode = 0，下单成功
                     case self.con.GlobalPrompt().errorCode.Success:
-
+                        //模拟下单成功后的数据返回
                         var data = {
                             "reason": "订单提交成功，等待充值",
                             "result": {

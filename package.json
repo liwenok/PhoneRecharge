@@ -1,7 +1,7 @@
 {
   "name": "recharge",
   "version": "1.0.0",
-  "description": "A Vue.js project",
+  "description": "话费充值 - Vue开源项目",
   "author": "bmy <2271608011@qq.com>",
   "private": true,
   "scripts": {
