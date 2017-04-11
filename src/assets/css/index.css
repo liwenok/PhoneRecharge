@@ -1,0 +1,27 @@
+@charset "UTF-8";
+.text-cen-index{
+    text-align: center;
+}
+.item-list-index{
+    margin: 0px 0 10px 10px;
+    height: 70px !important;
+    width: 116px !important;
+    padding: 10px 0;
+    border: 1px solid #d8d8d8;
+    display: block;
+}
+.item-list-discount{
+    margin-top: 3px;
+    font-size: 14px;
+    color: rgba(126, 87, 194, 0.65);
+}
+.item-list-title{
+    font-size: 17px;
+    color: #7e57c2;
+}
+.prompt-info-index{
+    padding: 5px;
+    color: #9e9c9c;
+    font-size: 12px;
+    line-height: 18px;
+}
